@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleziona l'aspetto"
+        android:textColor="@color/textColor"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rB_day">
+
+        <RadioButton
+            android:id="@+id/rB_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chiaro (Giorno)"
+            android:textColor="@color/textColor" />
+
+        <RadioButton
+            android:id="@+id/rB_night"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scuro (Notte)"
+            android:textColor="@color/textColor" />
+
+        <RadioButton
+            android:id="@+id/rB_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predefinito da sistema"
+            android:textColor="@color/textColor" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tV_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor" />
+
+</LinearLayout>
